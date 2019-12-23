@@ -34,13 +34,13 @@ public class EmployeeController {
 	 * System.out.println("i>>>>>>>>>>>>>>>>"); return empservice.createEmployee();
 	 * // return null; }
 	 */
-//test
+//get all employees
 	@GetMapping("/emp")
 	public List getAllEmployees() {
 		System.out.println(">>>>>>>>>>>>>>>>");
 		return empservice.getDetails();
 	}
-
+	//get emp details
 	@GetMapping("/emp/{id}")
 	public Boolean getemp(@PathVariable Integer id) {
 		System.out.println(">>>>>>>>>>>>>>>>");
